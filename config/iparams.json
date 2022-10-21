@@ -1,0 +1,14 @@
+{
+    "domainName": {
+        "display_name": "Domain Name",
+        "description": "Please enter your domain name",
+        "type": "text",
+        "required": true
+      },
+      "apiKey": {
+        "display_name": "API Key",
+        "description": "Please enter your api_key",
+        "type": "text",
+        "required": true
+      }
+}
