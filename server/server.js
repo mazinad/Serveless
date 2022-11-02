@@ -119,7 +119,7 @@ async function updateTicket(ticketId,data){
   try{
     const response = await $request.put(`https://${data.iparams.domainName}/api/v2/tickets/${ticketId}/no`,{
       headers:{ 
-        'Authorization': 'Basic ' + btoa('VYUDaISDETObHFtX84SE'),
+        'Authorization': 'Basic ' + btoa(`${data.iparams.apiKey}`),
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
